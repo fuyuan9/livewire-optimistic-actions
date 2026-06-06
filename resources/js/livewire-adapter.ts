@@ -86,7 +86,7 @@ export function registerLivewireAdapter(
         const effects = response?.effects || {};
         console.log("[Optimistic] Effects keys:", Object.keys(effects));
         if (effects.errors) {
-          console.log(
+          console.error(
             "[Optimistic] Effects errors:",
             JSON.stringify(effects.errors),
           );
@@ -100,7 +100,7 @@ export function registerLivewireAdapter(
         console.log("[Optimistic] Associated action names:", actionNames);
         for (const actionName of actionNames) {
           if (hasErrors) {
-            console.log("[Optimistic] Resolving as FAILED:", actionName);
+            console.error("[Optimistic] Resolving as FAILED:", actionName);
             queue.resolve(componentId, actionName, false);
             onMutationFailed(componentId, actionName);
           } else {
