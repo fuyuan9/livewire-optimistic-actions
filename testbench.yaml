@@ -1,0 +1,12 @@
+providers:
+  - Livewire\LivewireServiceProvider
+  - Fuyuan9\Livewire\OptimisticActions\LivewireOptimisticActionsServiceProvider
+
+workbench:
+  discovers:
+    web: true
+    views: true
+    components: true
+
+env:
+  - SESSION_DRIVER=file

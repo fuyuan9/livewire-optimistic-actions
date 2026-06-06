@@ -1,0 +1,47 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/html
+      - ./docker/php/php.ini:/usr/local/etc/php/conf.d/custom-php.ini
+      - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/custom-xdebug.ini
+    working_dir: /var/www/html
+    user: "1000:1000"
+    command: tail -f /dev/null
+    ports:
+      - "8000:8000"
+    environment:
+      - XDEBUG_MODE=develop,coverage
+    depends_on:
+      - mysql
+      - redis
+
+  node:
+    image: node:22-alpine
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    user: "1000:1000"
+    command: tail -f /dev/null
+
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: optimistic_actions
+      MYSQL_USER: livewire
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+    ports:
+      - "3306:3306"
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  mailpit:
+    image: axllent/mailpit
+    ports:
+      - "8025:8025"

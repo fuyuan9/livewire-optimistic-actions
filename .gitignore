@@ -1,0 +1,16 @@
+/node_modules
+/vendor
+/dist
+/storage
+/workbench/vendor
+/workbench/bootstrap/cache
+
+.env
+.phpunit.cache
+.phpunit.result.cache
+.vitest.cache
+.DS_Store
+*.log
+npm-debug.log*
+.idea
+.vscode
