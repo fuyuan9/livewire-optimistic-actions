@@ -1,7 +1,7 @@
 # Livewire Optimistic Actions
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/fuyuan/livewire-optimistic-actions.svg?style=flat-square)](https://packagist.org/packages/fuyuan/livewire-optimistic-actions)
-[![Total Downloads](https://img.shields.io/packagist/dt/fuyuan/livewire-optimistic-actions.svg?style=flat-square)](https://packagist.org/packages/fuyuan/livewire-optimistic-actions)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/fuyuan9/livewire-optimistic-actions.svg?style=flat-square)](https://packagist.org/packages/fuyuan9/livewire-optimistic-actions)
+[![Total Downloads](https://img.shields.io/packagist/dt/fuyuan9/livewire-optimistic-actions.svg?style=flat-square)](https://packagist.org/packages/fuyuan9/livewire-optimistic-actions)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
 > **Declarative optimistic actions for Livewire.**  
@@ -35,7 +35,7 @@ This package is **not** a client-side state management library. Nor does it atte
 ## 📦 Installation
 
 ```bash
-composer require fuyuan/livewire-optimistic-actions
+composer require fuyuan9/livewire-optimistic-actions
 ```
 
 To load the assets, add the Blade directive immediately after `@livewireScripts` in your layout file (e.g., `app.blade.php`).
