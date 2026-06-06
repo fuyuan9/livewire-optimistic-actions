@@ -22,7 +22,7 @@ This package is **not** a client-side state management library. Nor does it atte
 
 ---
 
-## ✨ Features (v1.0)
+## ✨ Features (v1.0.0)
 
 *   **Simple Blade Attribute API**: Works simply by adding HTML attributes (`optimistic:*`).
 *   **Rich Scalar Updates**: Supports `increment`, `decrement`, and `set`.
@@ -245,7 +245,7 @@ make test-php
 
 ---
 
-## ⚠️ Limitations (v1.0)
+## ⚠️ Limitations (v1.0.0)
 *   **Offline Mode**: Not supported. Active server communication is required.
 *   **Deeply Nested Collections**: Supports only simple ID removal from collections. Deep nested reconciliation is not performed.
 *   **Temporary ID Replacement**: Not supported.

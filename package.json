@@ -1,6 +1,6 @@
 {
   "name": "livewire-optimistic-actions",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Declarative optimistic actions for Livewire",
   "type": "module",
   "main": "dist/livewire-optimistic-actions.js",

@@ -1,4 +1,4 @@
-# Release Notes - v0.1.0
+# Release Notes - v1.0.0
 
 This is the initial preview release of `livewire-optimistic-actions`.
 
